@@ -1,15 +1,17 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Leaf, ArrowLeft, Play } from "lucide-react"
+import { ArrowLeft, Play } from "lucide-react"
+import Image from "next/image"
 
 export default function MeditationPage() {
   const meditationVideos = [
     {
       id: "1",
-      title: "Meditasi Pernapasan untuk Ketenangan",
-      description: "Meditasi sederhana untuk menenangkan pikiran dan mengurangi stres melalui fokus pada pernapasan.",
-      embedId: "inpok4MKVLM", // YouTube video ID
+      title: "Meditasi Sanctuary Blooming",
+      description:
+        "Meditasi khusus Sanctuary Bloom untuk membantu kamu menemukan ketenangan dan kedamaian dalam perjalanan pertumbuhan diri.",
+      embedId: "Olvq9gKGkfQ", // Updated YouTube video ID
       duration: "10 menit",
     },
     {
@@ -35,7 +37,13 @@ export default function MeditationPage() {
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Leaf className="h-8 w-8 text-green-600" />
+              <Image
+                src="/images/sanctuary-bloom-logo.png"
+                alt="Sanctuary Bloom Logo"
+                width={64}
+                height={64}
+                className="h-16 w-16"
+              />
               <span className="text-2xl font-bold text-amber-900">Sanctuary Bloom</span>
             </div>
             <div className="hidden md:flex items-center space-x-6">

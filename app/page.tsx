@@ -1,7 +1,8 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Leaf, Heart, Sparkles } from "lucide-react"
+import { Heart, Sparkles } from "lucide-react"
+import Image from "next/image"
 
 export default function HomePage() {
   return (
@@ -11,7 +12,13 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Leaf className="h-8 w-8 text-green-600" />
+              <Image
+                src="/images/sanctuary-bloom-logo.png"
+                alt="Sanctuary Bloom Logo"
+                width={64}
+                height={64}
+                className="h-16 w-16"
+              />
               <span className="text-2xl font-bold text-amber-900">Sanctuary Bloom</span>
             </div>
             <div className="hidden md:flex items-center space-x-6">
@@ -36,7 +43,13 @@ export default function HomePage() {
       <section className="py-20 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <div className="mb-8">
-            <Leaf className="h-16 w-16 text-green-600 mx-auto mb-4" />
+            <Image
+              src="/images/sanctuary-bloom-logo.png"
+              alt="Sanctuary Bloom Logo"
+              width={64}
+              height={64}
+              className="h-16 w-16 mx-auto mb-4"
+            />
             <h1 className="text-5xl md:text-6xl font-bold text-amber-900 mb-4">Sanctuary Bloom</h1>
             <p className="text-2xl text-green-700 font-light mb-8">Ruang aman untuk bertumbuh</p>
             <p className="text-lg text-amber-700 max-w-2xl mx-auto leading-relaxed">
@@ -89,7 +102,13 @@ export default function HomePage() {
 
             <Card className="border-amber-200 bg-white/60 backdrop-blur-sm hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <Leaf className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <Image
+                  src="/images/sanctuary-bloom-logo.png"
+                  alt="Sanctuary Bloom Logo"
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 text-green-600 mx-auto mb-4"
+                />
                 <h3 className="text-xl font-semibold text-amber-900 mb-2">Refleksi Diri</h3>
                 <p className="text-amber-700">
                   Pertanyaan refleksi yang membantu kamu mengenal diri lebih dalam dan tumbuh dengan sadar.
@@ -104,7 +123,13 @@ export default function HomePage() {
       <footer className="bg-amber-100/50 border-t border-amber-200 py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <Leaf className="h-6 w-6 text-green-600" />
+            <Image
+              src="/images/sanctuary-bloom-logo.png"
+              alt="Sanctuary Bloom Logo"
+              width={24}
+              height={24}
+              className="h-6 w-6"
+            />
             <span className="text-lg font-semibold text-amber-900">Sanctuary Bloom</span>
           </div>
           <p className="text-amber-700">Ruang aman untuk bertumbuh • Menemani perjalanan batinmu dengan penuh kasih</p>
